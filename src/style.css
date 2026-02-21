@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+
+@layer components {
+    .text-style {
+        font-family: "Instrument Sans", sans-serif;
+    }
+}
+
+
+
+@layer components {
+    .grad {
+        background:
+            linear-gradient(135deg,
+                #93c5fd 0%,
+                #a78bfa 35%,
+                #8b5cf6 50%,
+                #a78bfa 65%,
+                #93c5fd 100%)
+    }
+}
+
+
+@layer utilities {
+    .text-grad {
+        background: linear-gradient(135deg,
+                #93c5fd 0%,
+                #a78bfa 35%,
+                #7041df 100%
+               );
+
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                
+    }
+}
