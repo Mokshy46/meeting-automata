@@ -28,12 +28,41 @@
         background: linear-gradient(135deg,
                 #93c5fd 0%,
                 #a78bfa 35%,
-                #7041df 100%
-               );
+                #7041df 100%);
 
-                color: transparent;
-                background-clip: text;
-                -webkit-background-clip: text;
-                
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+
     }
 }
+
+
+@keyframes loop-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+.animate-loop-scroll {
+    animation: loop-scroll 50s linear infinite;
+}
+
+
+@layer components {
+  .cards {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  }
+}
+
