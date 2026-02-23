@@ -1,4 +1,5 @@
 
+
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {
