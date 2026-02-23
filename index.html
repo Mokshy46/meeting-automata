@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class=" scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -13,38 +13,55 @@
 
 <body class=" bg-[rgb(21,23,24)]  text-amber-50 text-style">
 
-  <div class="container  ">
-    <section>
-      <nav class=" flex p-6">
-        <div class="logo flex-1 ">LOGO</div>
 
-        <div class="flex-1">
-          <ul class=" flex justify-center gap-12">
-            <li> Feature </li>
-            <li>Why LOGO</li>
-            <li>Pricing</li>
-            <li>FAQ</li>
+  <section  class=" sticky z-50 top-0 end-0 start-0 w-full shadow-2xl bg-[rgb(21,23,24)]  shadow-violet-400">
+    <nav class="  flex p-3">
+  
+        <a href="#home">
+          <img src="src/images/logoipsum-397.svg" alt="">
+        </a>
 
-          </ul>
-        </div>
+      <div class="flex-1">
+        <ul class=" flex justify-center gap-12">
+          <li>
+            <a href="#feature" class="nav-link relative pb-2 text-white/70 transition-colors">
+              Feature</a>
+          </li>
+          <li>
+            <a href="#why-glu" class="nav-link relative pb-2 text-white/70 transition-colors">
+              Why Glu</a>
+          </li>
+          <li>
+            <a href="#pricing" class="nav-link relative pb-2 text-white/70 transition-colors">
+              Pricing</a>
+          </li>
+          <li>
+            <a href="#faq" class="nav-link relative pb-2 text-white/70 transition-colors">
+              FAQ</a>
+          </li>
+
+        </ul>
+      </div>
 
 
-      </nav>
-      <div class="h-px w-full bg-gray-700"></div>
-    </section>
+    </nav>
+    <div class="h-px w-full bg-gray-700"></div>
+  </section>
 
 
-    <section>
-      <div class=" flex mx-9 p-5 my-8 ">
+  <div class="container ">
 
-        <div class=" flex-1">
+    <section id="home">
+      <div class=" flex mx-9 p-5 my-8 reveal ">
+
+        <div class=" flex-1 ">
           <button class=" bg-neutral-800 rounded-3xl p-2 hover:bg-neutral-700 my-3"><i class="ri-bard-fill"></i> Meeting
             automation for teams!</button>
           <h1 class=" text-7xl font-bold text-grad">
             Meeting <br>Automation <br>Platform for <br>Modern Teams
           </h1>
           <p class="my-4 font-semibold opacity-50">Automate your workflow. Connect to your tools. <br>Maximize meeting
-            productivity. <br><br>Klu connects your meetings to your workflow.
+            productivity. <br><br>Glu connects your meetings to your workflow.
           </p>
 
 
@@ -58,7 +75,7 @@
         </div>
       </div>
 
-      <h2 class=" text-2xl opacity-85 text-center m-8 font-semibold">Klu is loved by</h2><br>
+      <h2 class=" text-2xl opacity-85 text-center m-8 font-semibold">Glu is loved by</h2><br>
       <div class="overflow-hidden w-full">
         <div class="flex animate-loop-scroll gap-4 w-max opacity-50">
           <div class="flex-1 h-10 w-auto"><img src="src/images/logoipsum-232.svg" alt=""></div>
@@ -97,20 +114,20 @@
 
 
 
-  <section>
+  <section id="feature">
 
     <div class=" text-center py-14">
       <h2 class="font-bold text-6xl text-white">
-        How Klu Works
+        How Glu Works
       </h2>
 
       <p class="text-1xl text-white/70 py-5 font-semibold opacity-80">
-        From recording to action, Klu transforms your meetings into <br>automated workflows.
+        From recording to action, Glu transforms your meetings into <br>automated workflows.
       </p>
     </div>
 
 
-    <div class="flex items-center m-4  gap-7">
+    <div class="flex items-center m-4  gap-7 reveal">
 
 
       <div class=" flex-1 rounded-2xl text-center shadow-2xl shadow-black cards ">
@@ -193,10 +210,10 @@
 
 
   <br><br><br>
-  <section>
-    <div class=" text-center my-10">
+  <section id="why-glu">
+    <div class=" text-center my-10 reveal">
       <h1 class=" text-5xl font-bold my-6">
-        Why Choose Klu
+        Why Choose Glu
       </h1>
       <p class=" text-[20px] font-medium opacity-80 ">Connect your meetings to your workflow with powerful automations
         <br>that save time and boost productivity.
@@ -205,11 +222,11 @@
 
 
     <div class="flex items-center ">
-      <div class=""><img src="public/images/box.svg" class="" alt=""></div>
+      <div class="reveal"><img src="public/images/box.svg" class="" alt=""></div>
       <div class=" flex-col">
 
 
-        <div class="flex text-balance my-3">
+        <div class="flex text-balance my-3 reveal ">
           <div class=" text-2xl m-2"><i class="ri-check-double-line"></i></div>
           <div class="">
             <h1 class="text-2xl font-semibold py-1">
@@ -232,7 +249,7 @@
 
             </h1>
             <p class=" py-1 opacity-80">
-              Focus on meaningful conversations instead of note-taking. Klu handles the transcription, summarization,
+              Focus on meaningful conversations instead of note-taking. Glu handles the transcription, summarization,
               and task extraction automatically.
             </p>
           </div>
@@ -247,7 +264,7 @@
               Smart Action Tracking
             </h1>
             <p class=" py-1 opacity-80">
-              Never miss a follow-up again. Klu identifies action items and automatically assigns them in your task
+              Never miss a follow-up again. Glu identifies action items and automatically assigns them in your task
               management tools.
             </p>
           </div>
@@ -275,8 +292,8 @@
 
 
   <br><br>
-  <section>
-    <div class="text-center my-26">
+  <section id="pricing">
+    <div class="text-center my-26 reveal">
       <h2 class="text-5xl font-bold my-4">
         Simple, Transparent Pricing
       </h2>
@@ -304,7 +321,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Meeting Transcription</p>
             <p class=" text-[13px] opacity-80">Up to 25 meetings/month</p>
@@ -314,7 +331,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Max Meeting Duration</p>
             <p class=" opacity-80">1 hr</p>
@@ -324,7 +341,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Contacts</p>
             <p class=" opacity-80">Up to 50 contacts</p>
@@ -333,7 +350,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Recording Storage</p>
             <p class=" opacity-80">30 days retention</p>
@@ -342,7 +359,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Ask AI Feature</p>
           </div>
@@ -351,7 +368,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Basic AI Summaries</p>
           </div>
@@ -360,7 +377,7 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-600 text-neutral-950 m-2"></i>
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" font-semibold">Manual Note Taking</p>
           </div>
@@ -368,9 +385,8 @@
 
 
 
-
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-600 text-neutral-950 m-2"></i>
+          <i class="ri-close-line rounded-3xl font-bold p-1 bg-gray-500 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" opacity-45">CRM Integrations</p>
           </div>
@@ -378,14 +394,15 @@
 
 
         <div class=" flex m-3 mx-6 items-center">
-          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-red-600 text-neutral-950 m-2"></i>
+          <i class="ri-close-line rounded-3xl font-bold p-1 bg-gray-500 text-neutral-950 m-2"></i>
           <div class=" flex flex-col text-balance">
             <p class=" opacity-45">Priority Support</p>
           </div>
         </div>
 
 
-        <button class=" bg-neutral-800 rounded-3xl p-2 hover:bg-neutral-700 my-4 w-full ">Get Started</button>
+        <button class=" basic-btn hover:bg-neutral-700 my-6  ">Get Started</button>
+        <p class="text-center">Provides extended evaluation time</p>
 
 
 
@@ -395,10 +412,400 @@
 
 
 
-      <div class="flex-1 py-5 rounded-2xl text-center shadow-2xl shadow-black cards ">2</div>
-      <div class=" flex-1 py-5 rounded-2xl text-center shadow-2xl shadow-black cards ">3</div>
+      <div class=" flex-1 py-8 rounded-2xl border-2 text-center shadow-2xl shadow-cyan-300 cards ">
+
+        <h2 class="text-3xl font-bold">
+          Pro
+        </h2>
+
+        <p class=" font-semibold opacity-80 text-[14px]">Ideal plan for professionals needing full power.</p>
+
+        <div class="flex my-5 ">
+          <h2 class=" text-[60px] font-bold ml-20">$16.70</h2>
+          <p class=" opacity-75 my-9">/user/month</p>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Unlimited Meetings & Transcription</p>
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Unlimited Contacts</p>
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Unlimited Recording Storage</p>
+          </div>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Full AI Transcription & Summaries</p>
+          </div>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Ask AI Feature</p>
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">CRM Integrations</p>
+            <p class=" opacity-80">(Salesforce, HubSpot, etc.)</p>
+
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Notion & Slack Integrations</p>
+          </div>
+        </div>
+
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Priority Email Support</p>
+          </div>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-close-fill rounded-3xl font-bold p-1 bg-gray-500 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" opacity-45">Team Collaboration Features</p>
+          </div>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-close-fill rounded-3xl font-bold p-1 bg-gray-500 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" opacity-45">Advanced Reporting</p>
+          </div>
+        </div>
+
+
+        <button class="btn ">Start 7-days Free Trial</button>
+
+        <p class=" text-center opacity-75 my-2">Unlimited core features*</p>
+
+
+
+
+      </div>
+
+
+
+
+      <div class=" flex-1 py-8 rounded-2xl  text-center shadow-2xl shadow-cyan-300 cards ">
+
+        <h2 class="text-3xl font-bold">
+          Team
+        </h2>
+
+        <p class=" font-semibold opacity-80 text-[14px]">For collaborative firms needing advanced features.</p>
+
+        <div class="flex my-5 ">
+          <h2 class=" text-5xl font-bold ml-20 my-5">Contact Us</h2>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">All Features in Pro, plus:</p>
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Team Dashboard & Usage Overview</p>
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Team Member Reporting</p>
+          </div>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Advanced Ask AI (Team-wide)</p>
+          </div>
+        </div>
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Centralized Billing & Management</p>
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Custom Branding on Shared Notes</p>
+
+          </div>
+        </div>
+
+
+
+        <div class=" flex m-3 mx-6 items-center">
+          <i class="ri-check-fill rounded-3xl font-bold p-1 bg-green-200 text-neutral-950 m-2"></i>
+          <div class=" flex flex-col text-balance">
+            <p class=" font-semibold">Dedicated Support Options</p>
+          </div>
+        </div>
+
+
+        <button class=" basic-btn hover:bg-neutral-700 my-6  ">Request Team Pricing <i
+            class="ri-customer-service-line"></i></button>
+        <p class="text-center opacity-75">Min. 3 users</p>
+        <p class="text-center opacity-60">Custom setup & dedicated support</p>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </section>
+
+
+
+
+  <br><br><br><br>
+  <section id="faq">
+    <div class=" m-20 reveal ">
+      <h2 class=" text-6xl text-center font-bold">Frequently Asked Questions</h2>
+      <p class=" text-[20px] font-semibold text-center p-3 opacity-75">Everything you need to know about Glu.</p>
+    </div>
+
+
+
+
+
+    <div class=" mx-[95px] my-6 px-16 flex flex-col faq cursor-pointer">
+
+      <div class="flex">
+        <p class="text-balance text-[18px] my-4 flex-1">How is Glu different from other meeting note tools?</p>
+        <span> <i class="ri-arrow-down-s-line font-bold text-2xl"></i></span>
+      </div>
+
+
+      <p class="opacity-65 answer">
+        Glu goes beyond simple note-taking by automating your entire meeting workflow. While other tools just
+        transcribe, Glu extracts action items, creates tasks, and connects seamlessly to your favorite productivity
+        tools, saving you hours of manual work after every meeting.</p>
+      <div class="h-0.5 w-full bg-neutral-800"></div>
+
+    </div>
+
+
+
+    <div class=" mx-[95px] my-6 px-16 flex flex-col faq cursor-pointer ">
+
+      <div class="flex">
+        <p class="text-balance text-[18px] my-4 flex-1"> How does the automation feature work?</p>
+        <span> <i class="ri-arrow-down-s-line font-bold text-2xl"></i></span>
+      </div>
+
+
+      <p class="opacity-65 answer ">
+        Glu uses advanced AI to understand the context of your meetings. It identifies action items, decisions,
+        deadlines, and key information, then automatically routes this data to the right destinations in your workflow
+        tools based on rules you set up.
+      </p>
+      <div class="h-0.5 w-full bg-neutral-800"></div>
+
+    </div>
+
+
+
+
+
+    <div class=" mx-[95px] my-6 px-16 flex flex-col faq cursor-pointer ">
+
+      <div class="flex">
+        <p class="text-balance text-[18px] my-4 flex-1">Which tools and platforms does Glu integrate with?</p>
+        <span> <i class="ri-arrow-down-s-line font-bold text-2xl"></i></span>
+      </div>
+
+
+      <p class="opacity-65 answer">
+        Glu connects with most popular productivity suites, task management platforms, note-taking apps, and CRM
+        systems. Our open API also allows for custom integrations with your team's unique workflow tools and internal
+        systems.
+      </p>
+      <div class="h-0.5 w-full bg-neutral-800"></div>
+
+    </div>
+
+
+
+
+
+    <div class=" mx-[95px] my-6 px-16 flex flex-col faq cursor-pointer">
+
+      <div class="flex">
+        <p class="text-balance text-[18px] my-4 flex-1">Is my data secure and confidential?</p>
+        <span> <i class="ri-arrow-down-s-line font-bold text-2xl"></i></span>
+      </div>
+
+
+      <p class="opacity-65 answer ">
+        Absolutely. Glu employs enterprise-grade encryption for all data, both in transit and at rest. We never share
+        your data with third parties, and our systems are compliant with SOC 2 and GDPR requirements. Your business
+        conversations remain completely confidential.
+      </p>
+      <div class="h-0.5 w-full bg-neutral-800"></div>
+
+    </div>
+
+
+
+
+
+    <div class=" mx-[95px] my-6 px-16 flex flex-col faq cursor-pointer">
+
+      <div class="flex">
+        <p class="text-balance text-[18px] my-4 flex-1">How accurate is the meeting transcription?</p>
+        <span> <i class="ri-arrow-down-s-line font-bold text-2xl"></i></span>
+      </div>
+
+
+      <p class="opacity-65 answer">
+        Glu's transcription technology achieves over 98% accuracy for clear audio. Our AI is trained on diverse business
+        terminology and industry-specific jargon, making it highly effective for all types of meetings. The system also
+        improves over time as it learns from your team's communication patterns.
+      </p>
+      <div class="h-0.5 w-full bg-neutral-800"></div>
+
+    </div>
+
+
+
+
+
+    <div class=" mx-[95px] my-6 px-16 flex flex-col faq cursor-pointer">
+
+      <div class="flex">
+        <p class="text-balance text-[18px] my-4 flex-1">How much time can Glu save my team?</p>
+        <span> <i class="ri-arrow-down-s-line font-bold text-2xl"></i></span>
+      </div>
+
+
+      <p class="opacity-65 answer ">
+        Teams typically save 5-10 hours per week using Glu. This includes time previously spent taking notes during
+        meetings, manually extracting action items, entering tasks into project management tools, updating CRMs, and
+        creating follow-ups. Glu automates all these post-meeting workflows so your team can focus on the work that
+        matters.
+      </p>
+      <div class="h-0.5 w-full bg-neutral-800"></div>
+
     </div>
   </section>
+
+
+
+  <br><br><br><br>
+  <section>
+
+    <div class="flex text-balance m-10 gap-9">
+
+      <div class=" flex-1">
+        <h2 class="text-3xl font-bold my-3">Glu</h2>
+        <p class=" opacity-70 ">Meeting Automation Platform for Modern Teams.</p>
+        <p class=" opacity-70">For queries, contact us at support@Glu.so</p>
+        <span class=" mx-4 px-5 font-semibold gap-2 text-center"><i class="ri-facebook-circle-fill"></i>
+          <i class="ri-linkedin-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+        </span>
+      </div>
+
+      <div class=" flex-1 text-center">
+        <p class=" font-semibold my-4">Product</p>
+        <ul class=" opacity-70 my-2 ">
+          <li>Features</li>
+          <li>Integrations</li>
+          <li>Pricing</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+
+
+      <div class=" flex-1 text-center">
+        <p class=" font-semibold my-4">Legal</p>
+        <ul class=" opacity-70 my-2 ">
+          <li>Security</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <br><br><br>
+
+  <section>
+    <div class=" text-center opacity-70">
+      <h3>© 2026 Glu Technologies Oy. All rights reserved.</h3>
+    </div>
+    <br><br>
+  </section>
+  <script src="src/main.js"></script>
+
 </body>
 
 </html>

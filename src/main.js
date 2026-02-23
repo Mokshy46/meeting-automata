@@ -1,24 +1,66 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const faqs = document.querySelectorAll(".faq");
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+faqs.forEach(faq => {
+  const answer = faq.querySelector(".answer");
 
-setupCounter(document.querySelector('#counter'))
+  faq.addEventListener("click", () => {
+    if (faq.classList.contains("active")) {
+      // CLOSE
+      answer.style.maxHeight = answer.scrollHeight + "px"; // set current height
+      requestAnimationFrame(() => {
+        answer.style.maxHeight = "0px";
+      });
+      faq.classList.remove("active");
+    } else {
+      // OPEN
+      faq.classList.add("active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+
+
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").slice(1) === entry.target.id) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.6,
+  }
+);
+
+sections.forEach(section => observer.observe(section));
+
+
+
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal-active");
+        observer.unobserve(entry.target); // animate only once
+      }
+    });
+  },
+  {
+    threshold: 0.15, // 15% visible triggers animation
+  }
+);
+
+revealElements.forEach(el => revealObserver.observe(el));

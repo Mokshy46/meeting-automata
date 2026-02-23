@@ -56,13 +56,150 @@
 
 
 @layer components {
-  .cards {
-    @apply transition-all duration-300 ease-out;
-  }
+    .cards {
+        @apply transition-all duration-300 ease-out;
+    }
 
-  .cards:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-  }
+    .cards:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
 }
 
+
+
+@layer components {
+
+    /* From Uiverse.io by sekaiking */
+    .btn {
+        background-color: white;
+        color: black;
+        border-radius: 10em;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid black;
+        box-shadow: 0 0 0 0 black;
+    }
+
+    .btn:hover {
+        transform: translateY(-4px) translateX(-2px);
+        box-shadow: 2px 5px 0 0 black;
+    }
+
+    ;
+
+    .btn:active {
+        transform: translateY(2px) translateX(1px);
+        box-shadow: 0 0 0 0 black;
+    }
+
+    ;
+}
+
+
+
+@layer components {
+
+    .basic-btn {
+        background-color: #262626;
+        color: white;
+        border-radius: 10em;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 0 0 black;
+    }
+}
+
+
+
+/* @layer components{
+    .answer{
+        height: 0;
+        overflow: hidden;
+        transition: max-height 1.5s ease;
+    }
+
+    .faq.active .answer{
+        max-height: 300px;
+    }
+} */
+
+@layer components {
+    .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .faq.active .answer {
+        max-height: 300px;
+    }
+
+
+    span {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span i {
+        transition: transform 0.5s ease-in
+    }
+
+    .faq.active span i {
+        transform: rotate(180deg);
+    }
+
+    section {
+        scroll-margin-top: 80px;
+    }
+
+
+
+
+    .nav-link {
+        position: relative;
+        padding-bottom: 6px;
+        color: #cbd5e1;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link.active {
+        color: #ffffff;
+    }
+
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #a78bfa;
+        /* purple underline */
+        border-radius: 2px;
+    }
+
+
+
+    @layer components {
+        .reveal {
+            @apply opacity-0 translate-y-6 transition-all duration-900 ease-out;
+        }
+
+        .reveal-active {
+            @apply opacity-100 translate-y-0;
+        }
+    }
+
+
+   
+}
