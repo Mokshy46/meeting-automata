@@ -1,3 +1,5 @@
+import "./style.css";
+
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {

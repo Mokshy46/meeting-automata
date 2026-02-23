@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 @layer components {
@@ -190,16 +192,17 @@
 
 
 
-    @layer components {
-        .reveal {
-            @apply opacity-0 translate-y-6 transition-all duration-900 ease-out;
-        }
+}
 
-        .reveal-active {
-            @apply opacity-100 translate-y-0;
-        }
+
+
+
+@layer components {
+    .reveal {
+        @apply opacity-0 translate-y-6 transition-all duration-1000 ease-out;
     }
 
-
-   
+    .reveal-active {
+        @apply opacity-100 translate-y-0;
+    }
 }
